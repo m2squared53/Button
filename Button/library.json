@@ -1,34 +1,26 @@
 {
-  "name": "IRremote",
-  "version": "4.4.3",
-  "description": "Send and receive infrared signals with multiple protocols",
-  "keywords": "communication, infrared, ir, remote",
-  "homepage": "https://github.com/Arduino-IRremote/Arduino-IRremote",
+  "name": "Button",
+  "version": "0.1.0",
+  "description": "Simple Arduino momentary button implementation",
+  "keywords": "button, momentary, push-button",
+  "homepage": "https://github.com/m2squared53/Button",
   "repository":
   {
     "type": "git",
-    "url": "https://github.com/Arduino-IRremote/Arduino-IRremote.git"
+    "url": "https://github.com/m2squared53/Button.git"
   },
   "authors" :
   [
      {
-       "name":"Armin Joachimsmeyer",
-       "email":"armin.arduino@gmail.com",
+       "name":"Michael Morris",
+       "email":"m2squaredusaa@gmail.com",
        "maintainer": true
-     },
-     {
-       "name":"Rafi Khan",
-       "email":"rafi@rafikhan.io"
-     },
-     {
-       "name":"Ken Shirriff",
-       "email":"ken.shirriff@gmail.com"
      }
   ],
   "license": "MIT",
   "frameworks": "arduino",
   "platforms": ["atmelavr", "atmelmegaavr", "atmelsam", "espressif8266", "espressif32", "ststm32", "raspberrypi"],
-  "headers": "IRRemote.hpp",
+  "headers": "Button.h",
   "examples": "examples/*/*.ino",
   "export": {"exclude": [".github", "pictures"]}
 }
