@@ -1,5 +1,6 @@
 #######################################
-# Syntax Coloring Map For Button
+# Syntax Coloring Map For Button And
+# ValueButton
 #######################################
 
 #######################################
@@ -7,6 +8,7 @@
 #######################################
 
 Button	KEYWORD1
+ValueButton	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
@@ -15,9 +17,20 @@ Button	KEYWORD1
 isPressed	KEYWORD2
 begin	KEYWORD2
 isLongPressed	KEYWORD2
+getValue	KEYWORD2
+setValue	KEYWORD2
+getIncrement	KEYWORD2
+setIncrement	KEYWORD2
+setLongPressTime	KEYWORD2
+getLongPressTime	KEYWORD2
+onPress	KEYWORD2
+onRelease	KEYWORD2
+reset	KEYWORD2
 
 #######################################
 # Constants (LITERAL1)
 #######################################
 
-UNKNOWN	LITERAL1
+DEFAULT_LONG_PRESS_TIME	LITERAL1
+DEFAULT_INCREMENT	LITERAL1
+DEFAULT_VALUE	LITERAL1
