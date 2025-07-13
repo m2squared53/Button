@@ -7,26 +7,24 @@
 #define BUTTON_H
 
 #include "Arduino.h"
-
 /*
-  pin is the digital pin that the button connects to
-  type is the INPUT type and must be either INPUT_PULLUP for negative logic, 
-    i.e. Active LOW when pushed or INPUT_PULLDOWN for positive Active HIGH logic
+  A simple button. 
 */
 class Button {
     public:
-    Button(int pin, int type);
+    Button(int pin);
     void begin();
     bool isPressed();
     bool isLongPressed();
     void setLongPressTime(long time);
     long getLongPressTime();
+    virtual void onPress();
+    virtual void onRelease();
 
     private:
     int _pin;
-    int _type;
     long _longPressTime;
     long _lastPressed;
-}
+};
 
 #endif
